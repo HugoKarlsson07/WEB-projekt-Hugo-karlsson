@@ -1,0 +1,201 @@
+/* Grundinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Setup */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        'header header header header header header header header header header header header'
+        'nav nav nav nav nav nav nav nav nav nav nav nav'
+        'main main main main main main main main main main main main'
+        'footer footer footer footer footer footer footer footer footer footer footer footer';
+    flex: 1;
+    grid-gap: 20px;
+    padding: 0 20px;
+    justify-content: space-evenly;
+}
+
+/* Responsiv Grid */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'nav'
+            'main'
+            'footer';
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Header */
+.header {
+    background-color: #1abc9c;
+    grid-area: header;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.header1 {
+    background-color: #1abc9c;
+    grid-area: header;
+    padding-top: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1abc9c;
+    grid-area: nav;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.nav a {
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #1abc9c;
+}
+
+.nav a:focus {
+    outline: 2px dashed #fff;
+    outline-offset: 5px;
+}
+.a{
+    color: gray;
+}
+.a1{
+    color: white;
+}
+.p{
+    color: white;
+}
+/* Main Content */
+.main {
+    grid-area: main;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+.main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.main p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Image */
+.img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    grid-area: footer;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+/* Återanvändbara klasser */
+.rounded {
+    border-radius: 10px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
