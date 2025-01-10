@@ -51,8 +51,63 @@ body {
     }
 }
 
-/* Header */
 .header {
+    display: flex;
+    /* Flexbox-layout */
+    align-items: center;
+    /* Vertikal centrering av innehåll */
+    justify-content: center;
+    /* Horisontell centrering av textdelen */
+    background-color: #1abc9c;
+    grid-area: header;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.brain-link {
+    margin-right: 20px;
+    /* Utrymme mellan bilden och texten */
+}
+
+.brain {
+    width: 150px;
+    /* Storlek på ikonen */
+    height: auto;
+    /* Bevarar proportionerna */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    /* Hover-effekt */
+}
+
+.brain:hover {
+    transform: scale(1.1);
+    /* Växer vid hover */
+}
+
+.header-content {
+    text-align: center;
+    /* Centrerar texten */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    /* Textfärg */
+}
+
+.header-content p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    /* Ljusare textfärg för kontrast */
+}
+.header1 {
     background-color: #1abc9c;
     grid-area: header;
     border-radius: 10px;
@@ -62,17 +117,8 @@ body {
     margin-top: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
-}
-.header1 {
-    background-color: #1abc9c;
-    grid-area: header;
-    padding-top: 0px;
-    border-radius: 10px;
-    padding: 20px;
-    padding-bottom: 30px;
-    color: white;
-    text-align: center;
     margin-bottom: 40px;
+    
 }
 
 /* Navigation */
@@ -83,6 +129,7 @@ body {
     grid-area: nav;
     padding: 10px 0;
     border-radius: 10px;
+    
 }
 
 .nav a {
@@ -93,6 +140,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
+    
 }
 
 .nav a:hover {
@@ -104,7 +152,7 @@ body {
     outline-offset: 5px;
 }
 .a{
-    color: gray;
+    color: black;
 }
 .a1{
     color: white;
@@ -114,12 +162,14 @@ body {
 }
 /* Main Content */
 .main {
+    color: black;
     grid-area: main;
     padding: 40px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     margin-top: 20px;
+    
 }
 
 .main h2 {
@@ -131,20 +181,22 @@ body {
 .main p {
     font-size: 1rem;
     line-height: 1.6;
-    color: white;
 }
 
 /* Cards Section */
 .cards {
+    color: black;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 45px;
+    margin-top: 35px;
     flex-wrap: wrap;
 }
 
+
 .card {
     background-color: white;
+    color: black;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -152,6 +204,36 @@ body {
     text-align: center;
     justify-content: space-evenly;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.cardhome{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: auto;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardhome p {
+    padding: 15px 0;
+}
+
+
+.cardm {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url(/projekteget_Hugo/misc/clear-blue-sky-sunset-with-horizon-calm-ocean-sea-background-picturesque_31965-138504.avif);
 }
 
 .card:hover {
@@ -161,23 +243,40 @@ body {
 
 .card h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: black;
     margin-bottom: 15px;
 }
 
 .card p {
     font-size: 1rem;
-    color: #666;
+    color: black;
 }
 
 /* Image */
 .img {
     width: 100%;
     max-width: 90%;
+    height: 35%;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}
+.imgg {
+    width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 15px;
     margin: 0 auto;
     display: block;
+}
+.h3 {
+    color: black;
+}
+.svart {
+    color: black;
+}
+.b4 {
+    color:black
 }
 
 /* Footer */
