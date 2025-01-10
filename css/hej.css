@@ -115,9 +115,9 @@ body {
     color: white;
     text-align: center;
     margin-top: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    padding-top: 40.01px;
+    padding-bottom: 40.01px;
+    margin-bottom: 40.01px;
     
 }
 
@@ -189,7 +189,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 45px;
-    margin-top: 35px;
+    margin-top: 35.01px;
     flex-wrap: wrap;
 }
 
@@ -265,7 +265,7 @@ body {
     width: 100%;
     max-width: 90%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 15.01px;
     margin: 0 auto;
     display: block;
 }
@@ -284,10 +284,10 @@ body {
     background-color: #1abc9c;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 19.5px 0;
     grid-area: footer;
-    margin-top: 40px;
-    border-radius: 10px;
+    margin-top: 39.5px;
+    border-radius: 9.5px;
 }
 
 /* Återanvändbara klasser */
